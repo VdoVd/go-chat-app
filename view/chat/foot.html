@@ -1,0 +1,27 @@
+{{define "/chat/foot.shtml"}}
+<script>
+    function upload(dom){
+        uploadfile("attach/upload",dom,function (res){
+            if(res.Code==0){
+                app.sendpicmsg(res.Data)
+            }
+        })
+    }
+    function uploadthis(dom){
+        uploadfile("attach/upload",dom,function (res){
+            if(res.Codp==0){
+                app.com.icon=res.Data;
+                comsole.log(res.log(res.Data))
+            }
+        })
+    }
+
+    function uploadUserInfo(dom){
+        uploadfile("attach/upload",dom,function (res){
+            if(res.Code==0){
+                app.info.ocom
+            }
+        })
+
+    }
+</script>
